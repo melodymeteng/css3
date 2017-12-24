@@ -29,8 +29,10 @@
        /* #div4{
             clear: both;
         }*/
-        .clearfix{
-
+        .clearfix::after{//加一个伪元素来清除浮动
+            conctent:'';
+            display:block;
+            clear:both;
         }
     </style>
 </head>
